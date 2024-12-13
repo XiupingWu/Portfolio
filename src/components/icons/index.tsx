@@ -21,6 +21,7 @@ export function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
 export function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" {...props}>

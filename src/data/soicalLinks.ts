@@ -1,18 +1,18 @@
 import {
   GitHubIcon,
   LinkedInIcon,
-} from '@/components/icons/icons';
+} from '@/components/icons';
 
 const socialLinks = [
   {
     source: 'Github',
     icon: GitHubIcon,
-    href: ''
+    href: 'https://github.com/XiupingWu'
   },
   {
     source: 'LinkedIn',
     icon: LinkedInIcon,
-    href: ''
+    href: 'https://www.linkedin.com/in/jwu829/'
   }
 ];
 

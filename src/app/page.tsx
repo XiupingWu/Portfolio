@@ -1,4 +1,6 @@
 import Image from "next/image";
+import socialLinks from "@/data/soicalLinks";
+import IconLinks from "@/components/iconLinks";
 
 export default function Home() {
   return (
@@ -7,23 +9,22 @@ export default function Home() {
         src="/profile/me_placeholder.jpg" 
         width={100}
         height={100}
-        className="rounded-full"
+        className="rounded-full mb-4"
         alt={"This is my profile Image"}      
       />
       <h1 className="text-2xl font-bold">Xiuping(Johnson) Wu</h1>
 
       <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
-            I’m a fullstack software engineer specializing in building scalable
-            web applications having rich user interface using javascript and React.js.
+            I&apos;m a full-stack software engineer specializing in building scalable web applications with rich user interfaces using JavaScript and React.js.
           </p>
-          <p className="mt-4 mb-4">
-            Over the years, I have worked with a rapidly growing maritime startup, where I played a key role in building end-to-end products for the road construction industry, 
-            with a focus on developing ERP systems. I have also been an active contributor to various open-source projects, gaining valuable experience in collaborative development.
+            <p className="mt-4 mb-4">
+            I have worked with a fast-growing maritime startup, contributing to end-to-end products for the road construction industry and focusing on ERP system development. 
+            I&apos;ve also gained valuable experience through active participation in open-source projects.
             <br />
             <br />
-            Currently, I am seeking new opportunities while maintaining the official website for a globally recognized TIG automatic welding machine company. 
-            My responsibilities include ongoing website maintenance, community engagement, and content updates to enhance the company&apos;s online presence.
+            Currently, I manage the official website for a globally recognized TIG automatic welding machine company, 
+            handling maintenance, content updates, and community engagement to strengthen its online presence.
           </p>
 
           <p className="mb-4">
@@ -48,6 +49,17 @@ export default function Home() {
             </a>
           </p>
       </div>
+
+      <div className="flex space-x-4 mb-2 mt-4">
+          {socialLinks.map((link, index) => (
+            <IconLinks 
+              key={index}
+              aria-label={`Follow on ${link.source}`}
+              href={link.href} 
+              icon={link.icon}            
+            />
+          ))}
+        </div>      
     </section>
   );
 }
