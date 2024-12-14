@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`mx-auto min-h-screen max-w-3xl antialiased dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
+        className={`mx-auto min-h-screen max-w-3xl antialiased bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
       >
         <main className="mx-4  px-2 md:px-0 lg:mx-auto flex flex-col justify-between min-h-screen">
           <Navbar />
