@@ -14,7 +14,7 @@ export default function Home() {
       />
       <h1 className="text-2xl font-bold">Xiuping(Johnson) Wu</h1>
 
-      <div className="text-gray-700 dark:text-gray-300">
+      <div className="text-gray-700 dark:text-gray-300 md:text-sm text-base">
           <p className="mt-4">
             I&apos;m a full-stack software engineer specializing in building scalable web applications with rich user interfaces using JavaScript and React.js.
           </p>
