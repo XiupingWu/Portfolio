@@ -5,11 +5,11 @@ const navlinks = [
   },
   {
     label: 'Resume',
-    href: ''
+    href: '/resume'
   },
   {
     label: 'Project',
-    href: ''
+    href: '/project'
   },
 ]
 

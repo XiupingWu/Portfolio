@@ -31,7 +31,7 @@ export default function Home() {
             If you&apos;d like to collaborate, please&nbsp;
             <a
               href="mailto:wuxiuping96@gmail.com"
-              className="border-b inline-block"
+              className="border-b inline-block hover:text-blue-500"
             >
               send me an email
             </a>
@@ -42,7 +42,7 @@ export default function Home() {
             If you are interested in the highly efficient and reliable welding machines, please don&apos;t hesitate to
             <a
               href="https://www.ludingweld.com"
-              className="border-b inline-block"
+              className="border-b inline-block hover:text-blue-500"
               target="_blank"
             >
               &nbsp;Check Our Machines From Jin Luding Welding Co., Ltd
