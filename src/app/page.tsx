@@ -51,15 +51,19 @@ export default function Home() {
       </div>
 
       <div className="flex space-x-4 mb-2 mt-4">
-          {socialLinks.map((link, index) => (
-            <IconLinks 
-              key={index}
-              aria-label={`Follow on ${link.source}`}
-              href={link.href} 
-              icon={link.icon}            
-            />
-          ))}
-        </div>      
+        {socialLinks.map((link, index) => (
+          <IconLinks 
+            key={index}
+            aria-label={`Follow on ${link.source}`}
+            href={link.href} 
+            icon={link.icon}            
+          />
+        ))}
+      </div>
+
+      <div>
+        <a href="/resume" className="border-b inline-block hover:text-blue-500">View my resume</a>
+      </div>     
     </section>
   );
 }

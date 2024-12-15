@@ -1,12 +1,12 @@
 const navlinks = [
   {
     label: 'Home',
-    href: ''
+    href: '/'
   },
-  {
-    label: 'Resume',
-    href: '/resume'
-  },
+  // {
+  //   label: 'Resume',
+  //   href: '/resume'
+  // },
   {
     label: 'Project',
     href: '/project'
