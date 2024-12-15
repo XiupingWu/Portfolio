@@ -1,10 +1,12 @@
 import Accordion from "@/components/accordion"
+import { UniversityIcon, WorkCaseIcon } from "@/components/icons"
 
 export default function Resume() {
   return (
     <section className="mb-5 flex-col">
       <div>
-        <div className="border-white border p-5 flex">
+        <div className="border-white border p-5 flex align-middle space-x-2">
+          <UniversityIcon />
           <h1 className="uppercase">education</h1>
         </div>
         <div className="py-5">
@@ -14,7 +16,8 @@ export default function Resume() {
       </div>
 
       <div className="py-5">
-        <div className="border-white border p-5 flex">
+        <div className="border-white border p-5 flex align-middle space-x-2">
+          <WorkCaseIcon />
           <h1 className="uppercase">experience</h1>
         </div>
         <div className="my-5 space-y-1">
@@ -72,6 +75,10 @@ export default function Resume() {
             </ul>
           </Accordion>          
         </div>
+      </div> 
+
+      <div>
+        <a href="https://drive.google.com/file/d/1IZC6MQm8MkODsNGWdXzjXoP5dk7oQleo/view?usp=drive_link" className="border-b inline-block hover:text-blue-500">Download my resume, know me better</a>
       </div> 
     </section>
   )
