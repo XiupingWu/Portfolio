@@ -13,6 +13,7 @@ export default function Home() {
         alt={"This is my profile Image"}      
       />
       <h1 className="text-2xl font-bold">Xiuping(Johnson) Wu</h1>
+      <h2>Halifax, Nova Scotia</h2>
 
       <div className="text-gray-700 dark:text-gray-300 md:text-sm text-base">
           <p className="mt-4">

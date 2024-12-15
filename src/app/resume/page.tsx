@@ -21,7 +21,8 @@ export default function Resume() {
           <h1 className="uppercase">experience</h1>
         </div>
         <div className="my-5 space-y-1">
-          <Accordion title={`Technical Support (Remote) in Jin Luding Welding (2020 - Present)`}>
+          <Accordion title={`Technical Support in Jin Luding Welding (2020 - Present)`}>
+            <p className="my-2 text-sm italic">Remote</p>
             <ul className="md:text-justify text-sm px-2 list-disc space-y-4">
               <li>
                 In this volunteer role, I independently designed and deployed the company&apos;s official English website using Next.js, Node.js, 
@@ -41,6 +42,7 @@ export default function Resume() {
 
         <div className="mb-5 space-y-1">
           <Accordion title={`Software Developer in Site 20/20 (2021-2024)`}>
+            <p className="my-2 text-sm italic">On-Site in Dartmouth, Nova Scotia</p>
             <p>As a Software & Front-end Developer at Site 20/20, I contributed to two critical projects: Guardian Smart Flagger and Onyx.</p>
             <br/>
             <p className="mb-2"><b>Guardian Smart Flagger Android Application</b></p>
