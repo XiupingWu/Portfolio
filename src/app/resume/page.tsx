@@ -1,5 +1,5 @@
 import Accordion from "@/components/accordion"
-import { UniversityIcon, WorkCaseIcon } from "@/components/icons"
+import { CodingIcon, UniversityIcon, WorkCaseIcon } from "@/components/icons"
 
 export default function Resume() {
   return (
@@ -10,8 +10,8 @@ export default function Resume() {
           <h1 className="uppercase">education</h1>
         </div>
         <div className="py-5">
-          <p>2015 - 2020</p>
-          <p>Bechalor of Computer Science, Dalhousie University</p>
+          <p className="font-bold">Bechalor in Science of Computer Science</p>
+          <p className="text-[#878787]">2015 - 2020 | Dalhousie University</p>
         </div>
       </div>
 
@@ -79,6 +79,28 @@ export default function Resume() {
         </div>
       </div> 
 
+      <div>
+        <div className="border-white border p-5 flex align-middle space-x-2">
+          <CodingIcon />
+          <h1 className="uppercase">skills</h1>
+        </div>
+        <div className="py-5 grid-flow-row grid-cols-1">
+          <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
+            <li className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tech Skills I Offer</h3>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  JavaScript, TypeScript, React.js, React native, Next.js, Vue.js, Java, Android, Webflow
+                </p>
+            </li>
+            <li className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tech Skills I&apos;m learning</h3>
+                <p className="text-base font-normal text-gray-500 dark:text-gray-400">C#/.NET</p>
+            </li>
+          </ol>
+        </div>
+      </div>
       <div>
         <a href="https://drive.google.com/file/d/1IZC6MQm8MkODsNGWdXzjXoP5dk7oQleo/view?usp=drive_link" className="border-b inline-block hover:text-blue-500">Download my resume, know me better</a>
       </div> 

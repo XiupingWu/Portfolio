@@ -182,3 +182,38 @@ export function WorkCaseIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function CodingIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width={25}
+      height={25}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#ffffff"
+      stroke="#ffffff"
+      {...props}
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <defs>
+          <style>
+            {`.cls-1 {
+              fill: none;
+              stroke: #ffffff;
+              stroke-miterlimit: 10;
+              stroke-width: 1.91px;
+            }`}
+          </style>
+        </defs>
+        <polyline className="cls-1" points="7.23 6.27 1.5 12 7.23 17.73"></polyline>
+        <polyline className="cls-1" points="16.77 17.73 22.5 12 16.77 6.27"></polyline>
+        <line className="cls-1" x1="11.05" y1="12" x2="12.95" y2="12"></line>
+        <line className="cls-1" x1="15.82" y1="12" x2="17.73" y2="12"></line>
+        <line className="cls-1" x1="6.27" y1="12" x2="8.18" y2="12"></line>
+      </g>
+    </svg>
+  );
+}
+
