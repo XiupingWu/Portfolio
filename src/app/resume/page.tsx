@@ -1,5 +1,6 @@
 import Accordion from "@/components/accordion"
 import { CodingIcon, UniversityIcon, WorkCaseIcon } from "@/components/icons"
+import education from "@/data/education"
 
 export default function Resume() {
   return (
@@ -9,10 +10,14 @@ export default function Resume() {
           <UniversityIcon />
           <h1 className="uppercase">education</h1>
         </div>
-        <div className="py-5">
-          <p className="font-bold">Bechalor in Science of Computer Science</p>
-          <p className="text-[#878787]">2015 - 2020 | Dalhousie University</p>
-        </div>
+        {
+          education.map((education, index) => (
+            <div className="py-5" key={index}>
+              <p className="font-bold">{education.agency}</p>
+              <p className="text-[#878787]">{education.period} | {education.field}</p>
+            </div>
+          ))
+        }
       </div>
 
       <div className="py-5">
@@ -48,12 +53,16 @@ export default function Resume() {
             <p className="mb-2"><b>Guardian Smart Flagger Android Application</b></p>
             <ul className="md:text-justify text-sm px-2 list-disc space-y-4">
               <li>
-                Maintained the app alongside two developers, focusing on bug investigations, feature enhancements, 
-                and real-time monitoring/control of traffic devices.
+                Enhanced the in-app UI to improve user guidance and Flagger status visibility, ensuring a more intuitive user experience.
               </li>
               <li>
-                Contributed to automation testing by leading the development of a test application, 
-                working closely with the lead firmware developer for proper hardware interfacing using Bluetooth.
+                Implemented an authentication page during app initialization, capturing user contact information with validation to meet formatting standards (e.g., preventing SQL injection), securely transmitting data to the server for operational records and emergency contact purposes.
+              </li>
+              <li>
+                Developed a key feature enabling paired AFADs to automate traffic control between two endpoints, synchronizing gate operations with a single operate or predefined time intervals.             
+              </li>
+              <li>
+              Added emergency response functionality, allowing paired AFADs to detect traffic control arm damage and automatically adjust gate and light controls to restore safe traffic conditions.
               </li>
             </ul>
             <br/>
@@ -75,7 +84,7 @@ export default function Resume() {
                 Collaborated with dispatch coordinators from Titan Traffic Control to gather user feedback and ensure product quality improvements.
               </li>
             </ul>
-          </Accordion>          
+          </Accordion>        
         </div>
       </div> 
 
@@ -93,16 +102,20 @@ export default function Resume() {
                   JavaScript, TypeScript, React.js, React native, Next.js, Vue.js, Java, Android, Webflow
                 </p>
             </li>
-            <li className="mb-10 ms-4">
+            {/* <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tech Skills I&apos;m learning</h3>
                 <p className="text-base font-normal text-gray-500 dark:text-gray-400">C#/.NET</p>
-            </li>
+            </li> */}
           </ol>
         </div>
       </div>
       <div>
-        <a href="https://drive.google.com/file/d/1IZC6MQm8MkODsNGWdXzjXoP5dk7oQleo/view?usp=drive_link" className="border-b inline-block hover:text-blue-500">Download my resume, know me better</a>
+        <a 
+          target="_blank"
+          href="https://drive.google.com/file/d/1nhPkWhAtZ88dV6gLT0fMCR3exTiCi4af/view?usp=drive_link" 
+          className="border-b inline-block hover:text-blue-500"
+        >Download my resume, know me better</a>
       </div> 
     </section>
   )
