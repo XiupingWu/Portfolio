@@ -1,5 +1,7 @@
 import Accordion from "@/components/accordion"
 import { CodingIcon, UniversityIcon, WorkCaseIcon } from "@/components/icons"
+import Rating from "@/components/rating"
+import skillSheet from "@/data/skills"
 import education from "@/data/education"
 
 export default function Resume() {
@@ -97,10 +99,17 @@ export default function Resume() {
           <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tech Skills I Offer</h3>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tech Skills</h3>
+                <div className="grid grid-cols-3 gap-y-3">
+                  {
+                    skillSheet.map((skill, index) => (
+                      <Rating key={index} skill={skill.name} rating={skill.lv} />
+                    ))
+                  }
+                </div>
+                {/* <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                   JavaScript, TypeScript, React.js, React native, Next.js, Vue.js, Java, Android, Webflow
-                </p>
+                </p> */}
             </li>
             {/* <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

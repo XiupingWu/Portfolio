@@ -2,31 +2,47 @@
 const skillSheet = [
   {
     name: 'Java',
-    icon: '/skills/java.svg'
+    lv: 3
+  },
+  {
+    name: 'Python',
+    lv: 3
+  },
+  {
+    name: 'C/C++',
+    lv: 1,
   },
   {
     name: 'JavaScript',
-    icon: '/skills/javascript.svg'
+    lv: 3
   },
   {
     name: 'TypeScript',
-    icon: '/skills/typescript.svg'
+    lv: 3
   },
   {
-    name: 'React',
-    icon: '/skills/react.svg'
+    name: 'React.js',
+    lv: 3
   },
   {
-    name: 'Redux',
-    icon: '/skills/redux.svg'
+    name: 'Next.js',
+    lv: 3
+  },
+  {
+    name: 'React Native',
+    lv: 3
+  },
+  {
+    name: 'Node.js',
+    lv: 3
   },
   {
     name: 'Vue',
-    icon: '/skills/vue.svg'
+    lv: 2
   },
   {
     name: 'Webflow',
-    icon: '/skills/webflow.svg'
+    lv: 2
   }
 ];
 
