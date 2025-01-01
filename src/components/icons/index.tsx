@@ -1,6 +1,8 @@
 // Icons taken from: https://simpleicons.org/
 // To add a new icon, add a new function here and add it to components in social-icons/index.tsx
 
+import { FaSteam } from "react-icons/fa";
+
 interface IconProps {
   className?: string;
 }
@@ -187,3 +189,6 @@ export const CodingIcon = ({ className = "" }: IconProps) => (
   </svg>
 );
 
+export const SteamIcon = ({ className = "" }: IconProps) => (
+  <FaSteam className={className} />
+);

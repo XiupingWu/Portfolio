@@ -17,7 +17,7 @@ export default function Home() {
 
       <div className="md:text-sm text-base">
           <p className="mt-4">
-            I&apos;m a full-stack software engineer specializing in building scalable web applications with rich user interfaces using JavaScript and React.js.
+            I&apos;m a full-stack software engineer specializing in building scalable web applications with rich user interfaces using React.js, React Native, and Next.js.
           </p>
             <p className="mt-4 mb-4">
             I have worked with a fast-growing maritime startup, contributing to end-to-end products for the road construction industry and focusing on ERP system development. 
