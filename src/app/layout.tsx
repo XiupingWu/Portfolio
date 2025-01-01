@@ -43,7 +43,7 @@ export default function RootLayout({
         className={`mx-auto min-h-screen max-w-3xl antialiased bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
       >
         <ThemeProvider>
-          <main className="mx-4 px-2 md:px-0 lg:mx-auto flex flex-col justify-between min-h-screen">
+          <main className="mx-4 px-2 md:px-0 lg:mx-auto flex flex-col justify-between min-h-screen text-gray-700 dark:text-gray-300">
             <Navbar />
             {children}
             <Footer/>

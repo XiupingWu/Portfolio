@@ -1,15 +1,16 @@
 import Accordion from "@/components/accordion"
-import { CodingIcon, UniversityIcon, WorkCaseIcon } from "@/components/icons"
 import Rating from "@/components/rating"
 import skillSheet from "@/data/skills"
 import education from "@/data/education"
+import { FaCode, FaUniversity } from "react-icons/fa"
+import { MdOutlineWorkOutline } from "react-icons/md"
 
 export default function Resume() {
   return (
     <section className="mb-5 flex-col">
       <div>
-        <div className="border-white border p-5 flex align-middle space-x-2">
-          <UniversityIcon />
+        <div className="border-gray-700 dark:border-white border p-5 flex align-middle space-x-2">
+          <FaUniversity className="fill-gray-700 dark:fill-white" size={25}/>
           <h1 className="uppercase">education</h1>
         </div>
         {
@@ -23,8 +24,8 @@ export default function Resume() {
       </div>
 
       <div className="py-5">
-        <div className="border-white border p-5 flex align-middle space-x-2">
-          <WorkCaseIcon />
+        <div className="border-gray-700 dark:border-white border p-5 flex align-middle space-x-2">
+          <MdOutlineWorkOutline className="fill-gray-700 dark:fill-white" size={25}/>
           <h1 className="uppercase">experience</h1>
         </div>
         <div className="my-5 space-y-1">
@@ -91,8 +92,8 @@ export default function Resume() {
       </div> 
 
       <div>
-        <div className="border-white border p-5 flex align-middle space-x-2">
-          <CodingIcon />
+        <div className="border-gray-700 dark:border-white border p-5 flex align-middle space-x-2">
+          <FaCode className="fill-gray-700 dark:fill-white" size={25}/>
           <h1 className="uppercase">skills</h1>
         </div>
         <div className="py-5 grid-flow-row grid-cols-1">

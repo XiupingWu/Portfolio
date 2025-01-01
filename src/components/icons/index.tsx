@@ -1,6 +1,10 @@
 // Icons taken from: https://simpleicons.org/
 // To add a new icon, add a new function here and add it to components in social-icons/index.tsx
 
+interface IconProps {
+  className?: string;
+}
+
 export function GitHubIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -133,87 +137,53 @@ export function SunIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export function UniversityIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      fill="#ffffff"
-      width={25}
-      height={25}
-      viewBox="-5 0 32 32"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
-      {...props}
-    >
-      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-      <g id="SVGRepo_iconCarrier">
-        <title>university</title>
-        <path d="M0.84 12.96h20.52c0.48 0 0.84-0.36 0.84-0.84 0-0.36-0.2-0.64-0.52-0.76l-10.2-5.2c-0.24-0.12-0.52-0.12-0.76 0l-10.24 5.2c-0.36 0.16-0.52 0.56-0.44 0.96 0.12 0.36 0.4 0.64 0.8 0.64zM11.12 7.88l6.72 3.4h-13.44l6.72-3.4zM21.36 24.24h-1.64v-9.36c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v9.36h-3.52v-9.36c0-0.48-0.36-0.84-0.84-0.84-0.44 0-0.84 0.36-0.84 0.84v9.36h-3.52v-9.36c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v9.36h-3.48v-9.36c0-0.48-0.36-0.84-0.84-0.84s-0.8 0.36-0.8 0.84v9.36h-1.64c-0.48 0-0.84 0.36-0.84 0.84s0.36 0.84 0.84 0.84h20.52c0.48 0 0.84-0.36 0.84-0.84s-0.4-0.84-0.88-0.84z"></path>
-      </g>
-    </svg>
-  );
-}
+export const UniversityIcon = ({ className = "" }: IconProps) => (
+  <svg className={className} fill="#ffffff" width={25} height={25} viewBox="-5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <title>university</title>
+      <path d="M0.84 12.96h20.52c0.48 0 0.84-0.36 0.84-0.84 0-0.36-0.2-0.64-0.52-0.76l-10.2-5.2c-0.24-0.12-0.52-0.12-0.76 0l-10.24 5.2c-0.36 0.16-0.52 0.56-0.44 0.96 0.12 0.36 0.4 0.64 0.8 0.64zM11.12 7.88l6.72 3.4h-13.44l6.72-3.4zM21.36 24.24h-1.64v-9.36c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v9.36h-3.52v-9.36c0-0.48-0.36-0.84-0.84-0.84-0.44 0-0.84 0.36-0.84 0.84v9.36h-3.52v-9.36c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v9.36h-3.48v-9.36c0-0.48-0.36-0.84-0.84-0.84s-0.8 0.36-0.8 0.84v9.36h-1.64c-0.48 0-0.84 0.36-0.84 0.84s0.36 0.84 0.84 0.84h20.52c0.48 0 0.84-0.36 0.84-0.84s-0.4-0.84-0.88-0.84z"></path>
+    </g>
+  </svg>
+);
 
-
-export function WorkCaseIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      fill="#ffffff"
-      width={25}
-      height={25}
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 512 512"
-      stroke="#000000"
-      {...props}
-    >
-      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-      <g id="SVGRepo_iconCarrier">
-        <title>work-case</title>
-        <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-          <g id="Combined-Shape" fill="#ffffff" transform="translate(42.666667, 64.000000)">
-            <path d="M277.333333,1.42108547e-14 L298.666667,21.3333333 L298.666,64 L426.666667,64 L426.666667,362.666667 L3.55271368e-14,362.666667 L3.55271368e-14,64 L128,64 L128,21.3333333 L149.333333,1.42108547e-14 L277.333333,1.42108547e-14 Z M42.6664912,220.935181 L42.6666667,320 L384,320 L384.000468,220.935097 C341.375319,233.130501 298.701692,240.759085 256.000479,243.809455 L256,277.333333 L170.666667,277.333333 L170.666323,243.809465 C127.965163,240.759108 85.2915887,233.130549 42.6664912,220.935181 Z M384,106.666667 L42.6666667,106.666667 L42.6668606,176.433085 C99.6386775,193.933257 156.507113,202.666667 213.333333,202.666667 C270.159803,202.666667 327.028489,193.933181 384.000558,176.432854 L384,106.666667 Z M256,42.6666667 L170.666667,42.6666667 L170.666667,64 L256,64 L256,42.6666667 Z"></path>
-          </g>
+export const WorkCaseIcon = ({ className = "" }: IconProps) => (
+  <svg className={className} fill="#ffffff" width={25} height={25} version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" stroke="#000000">
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <title>work-case</title>
+      <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="Combined-Shape" fill="#ffffff" transform="translate(42.666667, 64.000000)">
+          <path d="M277.333333,1.42108547e-14 L298.666667,21.3333333 L298.666,64 L426.666667,64 L426.666667,362.666667 L3.55271368e-14,362.666667 L3.55271368e-14,64 L128,64 L128,21.3333333 L149.333333,1.42108547e-14 L277.333333,1.42108547e-14 Z M42.6664912,220.935181 L42.6666667,320 L384,320 L384.000468,220.935097 C341.375319,233.130501 298.701692,240.759085 256.000479,243.809455 L256,277.333333 L170.666667,277.333333 L170.666323,243.809465 C127.965163,240.759108 85.2915887,233.130549 42.6664912,220.935181 Z M384,106.666667 L42.6666667,106.666667 L42.6668606,176.433085 C99.6386775,193.933257 156.507113,202.666667 213.333333,202.666667 C270.159803,202.666667 327.028489,193.933181 384.000558,176.432854 L384,106.666667 Z M256,42.6666667 L170.666667,42.6666667 L170.666667,64 L256,64 L256,42.6666667 Z"></path>
         </g>
       </g>
-    </svg>
-  );
-}
+    </g>
+  </svg>
+);
 
-export function CodingIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      width={25}
-      height={25}
-      xmlns="http://www.w3.org/2000/svg"
-      fill="#ffffff"
-      stroke="#ffffff"
-      {...props}
-    >
-      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-      <g id="SVGRepo_iconCarrier">
-        <defs>
-          <style>
-            {`.cls-1 {
-              fill: none;
-              stroke: #ffffff;
-              stroke-miterlimit: 10;
-              stroke-width: 1.91px;
-            }`}
-          </style>
-        </defs>
-        <polyline className="cls-1" points="7.23 6.27 1.5 12 7.23 17.73"></polyline>
-        <polyline className="cls-1" points="16.77 17.73 22.5 12 16.77 6.27"></polyline>
-        <line className="cls-1" x1="11.05" y1="12" x2="12.95" y2="12"></line>
-        <line className="cls-1" x1="15.82" y1="12" x2="17.73" y2="12"></line>
-        <line className="cls-1" x1="6.27" y1="12" x2="8.18" y2="12"></line>
-      </g>
-    </svg>
-  );
-}
+export const CodingIcon = ({ className = "" }: IconProps) => (
+  <svg className={className} viewBox="0 0 24 24" width={25} height={25} xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <defs>
+        <style>
+          {`.cls-1 {
+            fill: none;
+            stroke: #ffffff;
+            stroke-miterlimit: 10;
+            stroke-width: 1.91px;
+          }`}
+        </style>
+      </defs>
+      <polyline className="cls-1" points="7.23 6.27 1.5 12 7.23 17.73"></polyline>
+      <polyline className="cls-1" points="16.77 17.73 22.5 12 16.77 6.27"></polyline>
+      <line className="cls-1" x1="11.05" y1="12" x2="12.95" y2="12"></line>
+      <line className="cls-1" x1="15.82" y1="12" x2="17.73" y2="12"></line>
+      <line className="cls-1" x1="6.27" y1="12" x2="8.18" y2="12"></line>
+    </g>
+  </svg>
+);
 
