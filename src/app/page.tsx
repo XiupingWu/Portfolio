@@ -6,13 +6,16 @@ export default function Home() {
   return (
     <section className="mb-5">
       <Image
-        src="/profile/me_placeholder.jpg" 
+        src="/profile/profile.png" 
         width={100}
         height={100}
-        className="rounded-full mb-4"
+        className="rounded-full mb-4 dark:ring-0 ring-2 ring-black"
         alt={"This is my profile Image"}      
       />
-      <h1 className="text-2xl font-bold">Xiuping(Johnson) Wu</h1>
+      <div id="name" className="flex flex-row items-center space-x-3">
+        <h1 className="text-2xl font-bold mb-1">Xiuping(Johnson) Wu</h1>
+        <h4>An honest and reliable software developer</h4>
+      </div>
       <h2>Halifax, Nova Scotia</h2>
 
       <div className="md:text-sm text-base">
@@ -29,7 +32,7 @@ export default function Home() {
           </p>
 
           <p className="mb-4">
-            If you&apos;d like to collaborate, please&nbsp;
+            I&apos;m seeking any opportunity to do some fun industrial projects, if you&apos;d like to collaborate, please&nbsp;
             <a
               href="mailto:wuxiuping96@gmail.com"
               className="border-b inline-block hover:text-blue-500"
@@ -40,13 +43,13 @@ export default function Home() {
           </p>
 
           <p className="mb-4">
-            If you are interested in the highly efficient and reliable welding machines, please don&apos;t hesitate to
+            If you are interested in the highly efficient and reliable welding machines that have been doing works that you can or you couldn&apos;t imagine, please don&apos;t hesitate to
             <a
               href="https://www.ludingweld.com"
               className="border-b inline-block hover:text-blue-500"
               target="_blank"
             >
-              &nbsp;Check Our Machines From Jin Luding Welding Co., Ltd
+              &nbsp;Check Our Machines From Jin Luding Welding Co., Ltd,
             </a>
           </p>
       </div>
