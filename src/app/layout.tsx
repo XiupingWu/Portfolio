@@ -43,11 +43,13 @@ export default function RootLayout({
         className={`mx-auto min-h-screen max-w-3xl antialiased bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
       >
         <ThemeProvider>
-          <main className="mx-4 px-2 md:px-0 lg:mx-auto flex flex-col justify-between min-h-screen text-gray-700 dark:text-gray-300">
+          <div className="max-w-4xl mx-auto px-6 py-12">
             <Navbar />
-            {children}
-            <Footer/>
-          </main>
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
