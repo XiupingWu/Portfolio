@@ -40,7 +40,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`mx-auto min-h-screen max-w-3xl antialiased bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
+        className={`mx-auto min-h-screen max-w-3xl antialiased text-black bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
       >
         <ThemeProvider>
           <div className="max-w-4xl mx-auto px-6 py-12">
