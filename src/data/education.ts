@@ -5,14 +5,9 @@ const education = [
     period: '2015 - 2020'
   },
   {
-    agency: 'MicroSoft',
-    field: 'C#, .NET',
-    period: '2023 - present'
-  },
-  {
-    agency: 'Coursera, Andrew Ng',
-    field: 'Deep Learning Specialization',
-    period: '2023 - present'
+    agency: 'Digital Nova Scotia - Skills For Hire',
+    field: 'Data Analytics',
+    period: '2025 - present'
   }
 ]
 
