@@ -8,7 +8,11 @@ export default function ThemeSwitch() {
   if (!mounted) {
     return (
       <button className="relative w-14 h-7 rounded-full bg-zinc-100 dark:bg-zinc-800">
-        <div className="absolute top-1 w-5 h-5 rounded-full bg-white shadow-md" />
+        <div 
+          className={`absolute top-1 w-5 h-5 rounded-full bg-white shadow-md
+            ${isDark ? 'translate-x-8' : 'translate-x-1'}
+          `}
+        />
       </button>
     );
   }
