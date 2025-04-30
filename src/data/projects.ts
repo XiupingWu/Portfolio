@@ -19,6 +19,14 @@ const projects: ProjectInterface[] = [
     technologies: ["Webflow", "Next.js", "Tailwind CSS", "Vercel"],
     siteUrl: "https://www.ludingweld.com"
   },
+  {
+    id: 2,
+    title: 'ONYX - The evolution of the traffic control industry.',
+    imageUrl: '/projects/onyx-site2020.png',
+    description: "Onyx is the industry’s first digital scheduling and billing system for your Traffic Control team.",
+    technologies: ['Vue.js', 'AWS', 'S3-Bucket', 'Python Flask', 'SQL database', 'PWA'],
+    siteUrl: 'https://onyx.site2020.com/'
+  }
   // ... add more projects as needed
 ];
 export default projects;

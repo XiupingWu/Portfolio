@@ -29,11 +29,11 @@ export default function Resume() {
           <h1 className="uppercase">experience</h1>
         </div>
         <div className="my-5 space-y-1">
-          <Accordion title={`Technical Support in Jin Luding Welding (2020 - Present)`}>
+          <Accordion title={`Digital Content Manager in Jin Luding Welding (2024 - Present)`}>
             <p className="my-2 text-sm italic">Remote</p>
             <ul className="md:text-justify text-sm px-2 list-disc space-y-4">
               <li>
-                In this volunteer role, I independently designed and deployed the company&apos;s official English website using Next.js, Node.js, 
+                Independently designed and deployed the company&apos;s official English site using Next.js, Node.js, 
                 and Vercel, ensuring efficient serverless deployment and ongoing maintenance. 
               </li>
               <li>
@@ -41,7 +41,7 @@ export default function Resume() {
                 leveraging content creation and online marketing tools to strengthen its global presence.
               </li>
               <li>
-                Recently, I migrated the entire website to Webflow, blending modern aesthetics with ease of maintenance, 
+                Migrated the entire website to Webflow, blending modern aesthetics with ease of maintenance, 
                 ensuring a polished and professional online presence. 
               </li>
             </ul>

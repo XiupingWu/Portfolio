@@ -3,10 +3,10 @@ const navlinks = [
     label: 'About Me',
     href: '/'
   },
-  // {
-  //   label: 'Blog',
-  //   href: '/blog'
-  // },
+  {
+    label: 'Resume',
+    href: '/resume'
+  },
   {
     label: 'Project',
     href: '/project'
