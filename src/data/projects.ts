@@ -13,9 +13,9 @@ export interface ProjectInterface {
 const projects: ProjectInterface[] = [
   {
     id: 1,
-    title: "Jin Luding Welding (Shandong)",
+    title: "Jin Luding Welding",
     imageUrl: '/projects/www.ludingweld.com_.png',
-    description: "This is the English official site for Jin Luding Welding (Shandong) Co., Ltd",
+    description: "This is the English official site for Jin Luding Welding Co., Ltd",
     technologies: ["Webflow", "Next.js", "Tailwind CSS", "Vercel"],
     siteUrl: "https://www.ludingweld.com"
   },

@@ -27,7 +27,7 @@ export default function Home() {
             I&apos;ve also gained valuable experience through active participation in open-source projects.
             <br />
             <br />
-            Currently, I manage the official website for a globally recognized TIG automatic welding machine company, 
+            Currently, I manage the CMS of official website for a globally recognized TIG automatic welding machine company, 
             handling maintenance, content updates, and community engagement to strengthen its online presence.
           </p>
 

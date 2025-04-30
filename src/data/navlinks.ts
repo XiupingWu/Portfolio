@@ -1,6 +1,6 @@
 const navlinks = [
   {
-    label: 'Home',
+    label: 'About Me',
     href: '/'
   },
   // {
