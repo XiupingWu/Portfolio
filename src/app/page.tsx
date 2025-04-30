@@ -16,7 +16,7 @@ export default function Home() {
         <h1 className="text-2xl font-bold mb-1">Xiuping(Johnson) Wu</h1>
         <h4>An honest and reliable software developer</h4>
       </div>
-      <h2>Halifax, Nova Scotia</h2>
+      <h2>Calgary, Alberta</h2>
 
       <div className="md:text-sm text-base">
           <p className="mt-4">
