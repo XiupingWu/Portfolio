@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import { ThemeProvider } from "@/components/theme-provider";
+import SideNavbar from "@/components/side-navbar";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -40,17 +38,14 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`mx-auto min-h-screen max-w-3xl antialiased text-black bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
+        className={`px-5 flex min-h-screen w-full antialiased text-black bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
       >
-        <ThemeProvider>
-          <div className="max-w-4xl mx-auto px-6 py-12">
-            <Navbar />
-            <main>
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </ThemeProvider>
+        <div className="flex items-center h-screen">
+          <SideNavbar />
+        </div>
+        <div className="flex-1 mx-auto">
+          {children}
+        </div>
       </body>
     </html>
   );
