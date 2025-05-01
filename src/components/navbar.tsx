@@ -7,7 +7,7 @@ function Navbar() {
   const [isExpand, setIsExpand] = useState<boolean>(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-black">
+    <nav className="bg-white border-gray-200 dark:bg-transparent">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button 
           onClick={() => setIsExpand(!isExpand)}

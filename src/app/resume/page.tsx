@@ -7,7 +7,7 @@ import { MdOutlineWorkOutline } from "react-icons/md"
 
 export default function Resume() {
   return (
-    <section className="mb-5 flex-col">
+    <section className="container mx-auto px-4 py-8 flex flex-col">
       <div>
         <div className="border-gray-700 dark:border-white border p-5 flex align-middle space-x-2">
           <FaUniversity className="fill-gray-700 dark:fill-white" size={25}/>

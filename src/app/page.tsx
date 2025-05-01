@@ -4,7 +4,7 @@ import IconLinks from "@/components/iconLinks";
 
 export default function Home() {
   return (
-    <section className="mb-5">
+    <section className="container mx-auto px-4 py-8 flex flex-col justify-center">
       <Image
         src="/profile/profile.png" 
         width={100}
