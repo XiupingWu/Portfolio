@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-transparent">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-transparent">
         <button 
           onClick={() => setIsExpand(!isExpand)}
           className="ml-auto inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"          
