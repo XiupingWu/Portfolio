@@ -1,8 +1,6 @@
 import Accordion from "@/components/accordion"
-import Rating from "@/components/rating"
-import skillSheet from "@/data/skills"
 import education from "@/data/education"
-import { FaCode, FaUniversity } from "react-icons/fa"
+import { FaUniversity } from "react-icons/fa"
 import { MdOutlineWorkOutline } from "react-icons/md"
 
 export default function Resume() {
