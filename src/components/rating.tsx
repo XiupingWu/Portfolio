@@ -18,10 +18,10 @@ export default function Rating({skill, rating}: props) {
   return (
     <div>
       <p>{skill}</p>
-      <div className="flex flex-row">
+      {/* <div className="flex flex-row">
         {rates}
         {blankRates}
-      </div>
+      </div> */}
     </div>
   )
 }

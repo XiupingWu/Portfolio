@@ -29,7 +29,7 @@ export default function Resume() {
           <h1 className="uppercase">experience</h1>
         </div>
         <div className="my-5 space-y-1">
-          <Accordion title={`Digital Content Manager in Jin Luding Welding (2024 - Present)`}>
+          <Accordion title={`Web Developer in Jin Luding Welding (2024 - Present)`}>
             <p className="my-2 text-sm italic">Remote</p>
             <ul className="md:text-justify text-sm px-2 list-disc space-y-4">
               <li>
@@ -90,8 +90,8 @@ export default function Resume() {
           </Accordion>        
         </div>
       </div> 
-
-      <div>
+      
+      {/* <div>
         <div className="border-gray-700 dark:border-white border p-5 flex align-middle space-x-2">
           <FaCode className="fill-gray-700 dark:fill-white" size={25}/>
           <h1 className="uppercase">skills</h1>
@@ -108,22 +108,16 @@ export default function Resume() {
                     ))
                   }
                 </div>
-                {/* <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  JavaScript, TypeScript, React.js, React native, Next.js, Vue.js, Java, Android, Webflow
-                </p> */}
             </li>
-            {/* <li className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tech Skills I&apos;m learning</h3>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">C#/.NET</p>
-            </li> */}
           </ol>
         </div>
       </div>
+       */}
+
       <div>
         <a 
           target="_blank"
-          href="https://drive.google.com/file/d/1nhPkWhAtZ88dV6gLT0fMCR3exTiCi4af/view?usp=drive_link" 
+          href="https://drive.google.com/file/d/1lVpxtAdoekPQ3KRVpLmKyGLtEWeyN7Bs/view?usp=drive_link"
           className="border-b inline-block hover:text-blue-500"
         >Download my resume, know me better</a>
       </div> 
