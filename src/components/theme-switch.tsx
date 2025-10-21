@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "./theme-provider";
+import { useTheme } from "next-themes";
 
 function SunIcon() {
   return (
@@ -45,19 +45,13 @@ function MoonIcon() {
 }
 
 export default function ThemeSwitch() {
-  const { isDark, toggleTheme, mounted } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
-  if (!mounted) {
-    return (
-      <button
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800"
-        aria-label="Toggle theme"
-        type="button"
-      >
-        <SunIcon />
-      </button>
-    );
-  }
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+  };
+
+  const isDark = resolvedTheme === "dark";
 
   return (
     <button
