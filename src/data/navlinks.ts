@@ -11,6 +11,10 @@ const navlinks = [
     label: 'Project',
     href: '/project'
   },
+  {
+    label: 'Chat with Me',
+    href: '/'
+  }
 ]
 
 export default navlinks;

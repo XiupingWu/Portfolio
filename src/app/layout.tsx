@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`mx-auto min-h-screen max-w-3xl antialiased text-black bg-white dark:bg-zinc-950 dark:text-gray-100 ${geistMono.className}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="max-w-4xl mx-auto px-6 py-12">
             <Navbar />
             <main>
